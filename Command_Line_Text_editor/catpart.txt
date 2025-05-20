@@ -1,0 +1,112 @@
+#File
+ Size of file:
+    None.               [error]
+    Empty.              [property emptyfile]
+    Not Empty.           [single]
+
+  Final Line Termination:
+    NewLine Present in File.  [if !emptyfile] [single]
+    NewLine Missing in File. [if !emptyfile] [error]  
+
+
+#Options 
+ # -d Options
+  Presence of d option:
+     None.               [single]
+     One.                [property doptionpresent]
+     Many.               [single]
+
+  #Parameters of d options
+   Parameter value of d option:
+    <0.      [if doptionpresent][error] 
+    0.       [if doptionpresent][single]
+    1-9.     [if doptionpresent][single]
+    >9.      [if doptionpresent] [error] 
+    Non-Integer-Value. [if doptionpresent] [error]
+
+  # -f options
+   Presence of f option:
+     None.               [single]
+     One.                [property foptionpresent]
+     Many.               [single]
+  
+  #Parameters of f options
+   Parameter value of f option:
+     Bold.    [if foptionpresent][single]
+     Italic.  [if foptionpresent][single]
+     Code.    [if foptionpresent][single]
+     empty/invalid.  [if foptionpresent] [error] 
+
+  #Parameter of f substring
+   Paramter value of f substring:
+    Empty.     [if foptionpresent] [error]
+    Not-empty. [if foptionpresent][single]
+
+  # -i options
+   Presence of i options:
+     None.               [single]
+     One.                [property ioptionpresent]
+     Many.               [single]
+
+  # -k options
+   Presence of k options:
+     None.               [single]
+     One.                [property koptionpresent]
+     Many.               [single]
+
+  #Parameter of k string
+   Presence of k string:
+    Empty.   [if koptionpresent][error]
+    Not-Empty. [if koptionpresent][single] 
+
+
+  # -e options
+   Presence of e options:
+     None.               [single]
+     One.                [property eoptionpresent]
+     Many.               [single]
+
+  #Parameter of e string
+   Presence of e string:
+    Empty.   [if eoptionpresent][error]
+    Not-Empty. [if eoptionpresent][single] 
+
+  # -n options
+  Presence of n option:
+     None.               [single]
+     One.                [property noptionpresent]
+     Many.               [single]
+
+  #Parameters of n options
+  Parameter value of n option:
+    <1.       [if noptionpresent][error]
+    1-9.     [if noptionpresent][single]
+    >9.       [if noptionpresent] [error]
+    Non-Integer-Value. [if noptionpresent] [error]
+
+  # Options e and k that are mutually Exclusive to one another
+    Option -e and -k presence:
+    Only -e Present.    [if eoptionpresent && !koptionpresent][single]
+    Only -k Present.    [if !eoptionpresent && koptionpresent][single]
+    None Present.       [if !eoptionpresent && !koptionpresent][single]
+    Both e and k present. [if eoptionpresent && koptionpresent][error]
+
+  # Case sensitivity option for k and e 
+    Case sensitivity option for k and e:
+    Case sensitive -e.    [if !ioptionpresent && eoptionpresent && !koptionpresent][single]
+    Case insensitive -e.   [if ioptionpresent && eoptionpresent && !koptionpresent] [single]
+    Case sensitive -k.    [if !ioptionpresent && !eoptionpresent && koptionpresent][single]
+    Case insensitive -k.   [if ioptionpresent && !eoptionpresent && koptionpresent] [single]
+
+  #Unrecognized Options check
+    Presence of Unrecognized options:
+      No Unrecognized options present.  [single]
+      One Unrecognized option present.  [single]
+      Many Unrecognized options present. [single]
+
+ # Postion of -f Substring
+  Position of substring in line:
+      Beginning.				[if !emptyfile && foptionpresent][single]
+      Middle.					  [if !emptyfile && foptionpresent][single]
+      End.				    	[if !emptyfile && foptionpresent][single]
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TableRow>
+                    <TextView
+                        android:text="Attribute"
+                        android:textStyle="bold"
+                        android:padding="8dp" />
+                    <TextView
+                        android:id="@+id/job1TitleHeader"
+                        android:text="Job 1"
+                        android:textStyle="bold"
+                        android:padding="8dp" />
+                    <TextView
+                        android:id="@+id/job2TitleHeader"
+                        android:text="Job 2"
+                        android:textStyle="bold"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Title" android:padding="8dp" />
+                    <TextView android:id="@+id/job1Title" android:padding="8dp" />
+                    <TextView android:id="@+id/job2Title" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Company" android:padding="8dp" />
+                    <TextView android:id="@+id/job1Company" android:padding="8dp" />
+                    <TextView android:id="@+id/job2Company" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Location" android:padding="8dp" />
+                    <TextView android:id="@+id/job1Location" android:padding="8dp" />
+                    <TextView android:id="@+id/job2Location" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Adj. Salary" android:padding="8dp" />
+                    <TextView android:id="@+id/job1AdjSalary" android:padding="8dp" />
+                    <TextView android:id="@+id/job2AdjSalary" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Adj. Bonus" android:padding="8dp" />
+                    <TextView android:id="@+id/job1AdjBonus" android:padding="8dp" />
+                    <TextView android:id="@+id/job2AdjBonus" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="TR" android:padding="8dp" />
+                    <TextView android:id="@+id/job1TR" android:padding="8dp" />
+                    <TextView android:id="@+id/job2TR" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="HI" android:padding="8dp" />
+                    <TextView android:id="@+id/job1HI" android:padding="8dp" />
+                    <TextView android:id="@+id/job2HI" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="EPSD" android:padding="8dp" />
+                    <TextView android:id="@+id/job1EPSD" android:padding="8dp" />
+                    <TextView android:id="@+id/job2EPSD" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="CAA" android:padding="8dp" />
+                    <TextView android:id="@+id/job1CAA" android:padding="8dp" />
+                    <TextView android:id="@+id/job2CAA" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="JS" android:padding="8dp" />
+                    <TextView android:id="@+id/job1JS" android:padding="8dp" />
+                    <TextView android:id="@+id/job2JS" android:padding="8dp" />
+                </TableRow>
+
+            </TableLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/compareAgainButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compare Again"
+                android:layout_margin="8dp"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mainMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Menu"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

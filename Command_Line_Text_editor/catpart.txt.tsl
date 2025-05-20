@@ -1,0 +1,217 @@
+
+Test Case 1  		<error>
+   Size of file :  None
+
+
+Test Case 2  		<single>
+   Size of file :  Not Empty
+
+
+Test Case 3  		<single>  (follows [if])
+   Final Line Termination :  NewLine Present in File
+
+
+Test Case 4  		<error>  (follows [if])
+   Final Line Termination :  NewLine Missing in File
+
+
+Test Case 5  		<single>
+   Presence of d option :  None
+
+
+Test Case 6  		<single>
+   Presence of d option :  Many
+
+
+Test Case 7  		<error>  (follows [if])
+   Parameter value of d option :  <0
+
+
+Test Case 8  		<single>  (follows [if])
+   Parameter value of d option :  0
+
+
+Test Case 9  		<single>  (follows [if])
+   Parameter value of d option :  1-9
+
+
+Test Case 10 		<error>  (follows [if])
+   Parameter value of d option :  >9
+
+
+Test Case 11 		<error>  (follows [if])
+   Parameter value of d option :  Non-Integer-Value
+
+
+Test Case 12 		<single>
+   Presence of f option :  None
+
+
+Test Case 13 		<single>
+   Presence of f option :  Many
+
+
+Test Case 14 		<single>  (follows [if])
+   Parameter value of f option :  Bold
+
+
+Test Case 15 		<single>  (follows [if])
+   Parameter value of f option :  Italic
+
+
+Test Case 16 		<single>  (follows [if])
+   Parameter value of f option :  Code
+
+
+Test Case 17 		<error>  (follows [if])
+   Parameter value of f option :  empty/invalid
+
+
+Test Case 18 		<error>  (follows [if])
+   Paramter value of f substring :  Empty
+
+
+Test Case 19 		<single>  (follows [if])
+   Paramter value of f substring :  Not-empty
+
+
+Test Case 20 		<single>
+   Presence of i options :  None
+
+
+Test Case 21 		<single>
+   Presence of i options :  Many
+
+
+Test Case 22 		<single>
+   Presence of k options :  None
+
+
+Test Case 23 		<single>
+   Presence of k options :  Many
+
+
+Test Case 24 		<error>  (follows [if])
+   Presence of k string :  Empty
+
+
+Test Case 25 		<single>  (follows [if])
+   Presence of k string :  Not-Empty
+
+
+Test Case 26 		<single>
+   Presence of e options :  None
+
+
+Test Case 27 		<single>
+   Presence of e options :  Many
+
+
+Test Case 28 		<error>  (follows [if])
+   Presence of e string :  Empty
+
+
+Test Case 29 		<single>  (follows [if])
+   Presence of e string :  Not-Empty
+
+
+Test Case 30 		<single>
+   Presence of n option :  None
+
+
+Test Case 31 		<single>
+   Presence of n option :  Many
+
+
+Test Case 32 		<error>  (follows [if])
+   Parameter value of n option :  <1
+
+
+Test Case 33 		<single>  (follows [if])
+   Parameter value of n option :  1-9
+
+
+Test Case 34 		<error>  (follows [if])
+   Parameter value of n option :  >9
+
+
+Test Case 35 		<error>  (follows [if])
+   Parameter value of n option :  Non-Integer-Value
+
+
+Test Case 36 		<single>  (follows [if])
+   Option -e and -k presence :  Only -e Present
+
+
+Test Case 37 		<single>  (follows [if])
+   Option -e and -k presence :  Only -k Present
+
+
+Test Case 38 		<single>  (follows [if])
+   Option -e and -k presence :  None Present
+
+
+Test Case 39 		<error>  (follows [if])
+   Option -e and -k presence :  Both e and k present
+
+
+Test Case 40 		<single>  (follows [if])
+   Case sensitivity option for k and e :  Case sensitive -e
+
+
+Test Case 41 		<single>  (follows [if])
+   Case sensitivity option for k and e :  Case insensitive -e
+
+
+Test Case 42 		<single>  (follows [if])
+   Case sensitivity option for k and e :  Case sensitive -k
+
+
+Test Case 43 		<single>  (follows [if])
+   Case sensitivity option for k and e :  Case insensitive -k
+
+
+Test Case 44 		<single>
+   Presence of Unrecognized options :  No Unrecognized options present
+
+
+Test Case 45 		<single>
+   Presence of Unrecognized options :  One Unrecognized option present
+
+
+Test Case 46 		<single>
+   Presence of Unrecognized options :  Many Unrecognized options present
+
+
+Test Case 47 		<single>  (follows [if])
+   Position of substring in line :  Beginning
+
+
+Test Case 48 		<single>  (follows [if])
+   Position of substring in line :  Middle
+
+
+Test Case 49 		<single>  (follows [if])
+   Position of substring in line :  End
+
+
+Test Case 50 		(Key = 2.0.2.0.2.0.0.2.2.0.2.0.2.0.0.0.0.0.)
+   Size of file                        :  Empty
+   Final Line Termination              :  <n/a>
+   Presence of d option                :  One
+   Parameter value of d option         :  <n/a>
+   Presence of f option                :  One
+   Parameter value of f option         :  <n/a>
+   Paramter value of f substring       :  <n/a>
+   Presence of i options               :  One
+   Presence of k options               :  One
+   Presence of k string                :  <n/a>
+   Presence of e options               :  One
+   Presence of e string                :  <n/a>
+   Presence of n option                :  One
+   Parameter value of n option         :  <n/a>
+   Option -e and -k presence           :  <n/a>
+   Case sensitivity option for k and e :  <n/a>
+   Presence of Unrecognized options    :  <n/a>
+   Position of substring in line       :  <n/a>
+
